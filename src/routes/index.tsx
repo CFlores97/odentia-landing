@@ -38,7 +38,6 @@ import { Reveal } from "@/components/landing/Reveal";
 import { Pricing } from "@/components/landing/Pricing";
 import { AISearchSection } from "@/components/landing/AISearchSection";
 import {
-  CONTACT_EMAIL,
   DEMO_URL,
   LOGIN_URL,
   WHATSAPP_URL,
@@ -237,7 +236,7 @@ function Header() {
             <a href={LOGIN_URL}>Iniciar sesión</a>
           </Button>
           <Button variant="brand" size="sm" asChild>
-            <a href="#cta">Solicitar demo</a>
+            <a href={DEMO_URL}>Solicitar demo</a>
           </Button>
         </div>
         <Sheet>
@@ -266,7 +265,7 @@ function Header() {
               </SheetClose>
               <SheetClose asChild>
                 <Button variant="brand" asChild>
-                  <a href="#cta">Solicitar demo</a>
+                  <a href={DEMO_URL}>Solicitar demo</a>
                 </Button>
               </SheetClose>
             </div>
@@ -290,7 +289,7 @@ function Hero() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button variant="brand" size="xl" asChild>
-            <a href="#cta">Solicitar una demo</a>
+            <a href={DEMO_URL}>Solicitar una demo</a>
           </Button>
           <Button variant="outline" size="xl" asChild>
             <a href="#como-funciona">Ver cómo funciona</a>
@@ -604,11 +603,11 @@ function Footer() {
       links: [
         { label: "Funciones", href: "#funciones" },
         { label: "Planes", href: "#planes" },
-        { label: "Solicitar demo", href: "#cta" },
+        { label: "Solicitar demo", href: DEMO_URL },
         { label: "Iniciar sesión", href: LOGIN_URL },
       ],
     },
-    { title: "Empresa", links: [{ label: "Contacto", href: `mailto:${CONTACT_EMAIL}` }] },
+    { title: "Empresa", links: [{ label: "Contacto", href: WHATSAPP_URL }] },
     {
       // TODO(production): replace legal placeholders with published policy URLs.
       title: "Legal",

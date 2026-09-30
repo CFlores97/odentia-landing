@@ -1,12 +1,12 @@
 export const LOGIN_URL = "https://app.odentiahn.com/login";
 
-// TODO(production): confirm a real contact email before publishing.
-// Retained from the existing landing; no replacement address has been confirmed.
-export const CONTACT_EMAIL = "hola@odentia.com";
-// TODO(production): replace this placeholder with the confirmed WhatsApp number.
-export const WHATSAPP_NUMBER = "50400000000";
-export const DEMO_URL = `mailto:${CONTACT_EMAIL}?subject=Solicitar%20demo%20de%20Odentia`;
-export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
+// Correo oficial temporal del MVP; actualizar aquí al tener dominio propio.
+export const CONTACT_EMAIL = "odentiahn@gmail.com";
+// WhatsApp Business es el canal principal para contacto, demos y cotizaciones.
+export const WHATSAPP_NUMBER = "50431489374";
+const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
+export const WHATSAPP_URL = `${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hola, me gustaría recibir más información y una cotización de Odentia.")}`;
+export const DEMO_URL = `${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hola, me gustaría solicitar una demo de Odentia.")}`;
 
 export const SEO_TITLE = "Odentia | Software de gestión para odontólogos";
 export const SEO_DESCRIPTION =

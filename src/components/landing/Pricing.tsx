@@ -1,6 +1,7 @@
 import { Check, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
+import { DEMO_URL } from "./config";
 
 const essentialFeatures = [
   "Gestión de pacientes",
@@ -94,7 +95,7 @@ export function Pricing() {
                   asChild
                   className="mt-auto w-full"
                 >
-                  <a href="#cta" aria-label={`Solicitar demo del plan ${plan.name}`}>
+                  <a href={DEMO_URL} aria-label={`Solicitar demo del plan ${plan.name}`}>
                     Solicitar demo
                   </a>
                 </Button>
