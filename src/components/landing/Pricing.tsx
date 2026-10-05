@@ -16,7 +16,7 @@ const essentialFeatures = [
 const plans = [
   {
     name: "Fundador",
-    price: "300",
+    price: "11",
     badge: "Oferta inicial",
     text: "Precio promocional para los primeros odontólogos que se unan a Odentia.",
     features: essentialFeatures,
@@ -24,7 +24,7 @@ const plans = [
   },
   {
     name: "Esencial",
-    price: "400",
+    price: "15",
     badge: null,
     text: "Todo lo necesario para organizar la gestión diaria de tu consultorio.",
     features: essentialFeatures,
@@ -32,7 +32,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "600",
+    price: "25",
     badge: "Más completo",
     text: "Gestión clínica con herramientas avanzadas para encontrar y organizar tu información.",
     features: [
@@ -77,7 +77,7 @@ export function Pricing() {
                   )}
                 </div>
                 <p className="mt-6 text-primary">
-                  <span className="text-4xl font-extrabold">L {plan.price}</span>
+                  <span className="text-4xl font-extrabold">$ {plan.price}</span>
                   <span className="text-sm text-muted-foreground"> / mes</span>
                 </p>
                 <p className="mt-4 min-h-20 text-sm text-muted-foreground">{plan.text}</p>
